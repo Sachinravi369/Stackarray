@@ -46,6 +46,7 @@ void queue::deletenode()
     cout<<"element deleted :"<<temp->num<<endl;
     if(front==rear){
         front=rear=nullptr;
+        delete temp;
         return;
     }
     else front=front->ptr;
